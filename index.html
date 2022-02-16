@@ -5,11 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Money Master</title>
 </head>
 
 <body>
-    <h1>Money Manager</h1>
+    <!-- header starts -->
+    <header>
+        <h1>Money Manager</h1>
+
+
+    </header>
+    <!-- header ends -->
+
+    <main>
+        <section class="main-section">
+            <div>
+                <img src="images/money.jpeg" alt="">
+
+            </div>
+            <div class="info">
+
+                <div>
+                    <p>income</p>
+                    <p>income <span><input id="income-field" type="text"></span></p>
+
+
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <p>Food <span><input id="food-field" type="text"></span></p>
+                    <p>Rent <span><input id="rent-field" type="text"></span></p>
+                    <p>Clothes <span><input id="clothes-field" type="text"></span></p>
+                    <button id="calculate">Calculate</button>
+                    <p>total expenses: <span id="total-expenses"></span></p>
+                    <p>balance <span id="balance"></span></p>
+
+
+                </div>
+
+                <div>
+                    <p>save <input id='save-field' type="text">% <button id="save-button">save</button></p>
+                    <p>saving amount: <span id="saving-amount"></span></p>
+                    <p>remaining balance: <span id="remaining-balance"></span></p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="new.js"></script>
 </body>
 
 </html>
