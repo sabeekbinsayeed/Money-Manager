@@ -17,7 +17,12 @@ document.getElementById('calculate').addEventListener('click', function () {
     const total = parseFloat(foodValue) + parseFloat(rentValue) + parseFloat(clothesValue)
     console.log(typeof total)
 
-    if (!isNaN(total)) {
+    if (total > parseFloat(incomeValue)) {
+        document.getElementById('expense').style.display = 'block'
+    }
+
+
+    else if (!isNaN(total)) {
         expense = document.getElementById('total-expenses');
         expense.innerText = total;
 
@@ -39,9 +44,19 @@ document.getElementById('save-button').addEventListener('click', function () {
 
     saveValue = getValue('save-field')
     savingTotal = (parseFloat(incomeValue) * (parseFloat(saveValue) / 100))
-    document.getElementById('saving-amount').innerText = savingTotal;
+
     balance = document.getElementById('balance').innerText
-    remainingBalance = parseFloat(balance) - savingTotal;
-    document.getElementById('remaining-balance').innerText = remainingBalance
+    if (savingTotal > balance) {
+
+
+        document.getElementById('saving').style.display = 'block'
+    }
+    else {
+        document.getElementById('saving-amount').innerText = savingTotal;
+        remainingBalance = parseFloat(balance) - savingTotal;
+        document.getElementById('remaining-balance').innerText = remainingBalance
+        //saving > balance
+    }
+
 
 })

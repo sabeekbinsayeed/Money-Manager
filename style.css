@@ -31,6 +31,14 @@ button{
     color:red
 }
 
+#expense {
+    display: none;
+    color:red
+}
+#saving {
+    display: none;
+    color:red
+}
 
 
 

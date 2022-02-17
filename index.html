@@ -18,54 +18,60 @@
     </header>
     <!-- header ends -->
 
-    <main>
-        <section class="main-section">
-            <div>
-                <img src="images/money.jpeg" alt="">
 
-            </div>
-            <div class="info">
-
+    <!-- main section starts -->
+    <header>
+        <main>
+            <section class="main-section">
                 <div>
-                    <p>
-                        <strong>Income</strong>
-                    </p>
-                    <p>income <span><input id="income-field" type="text"></span></p>
+                    <img src="images/money.jpeg" alt="">
+
+                </div>
+                <div class="info">
+
+                    <div>
+                        <p>
+                            <strong>Income</strong>
+                        </p>
+                        <p>income <span><input id="income-field" type="text"></span></p>
+
+
+                    </div>
+                    <div>
+                        <p>
+                            <strong>Expenses</strong>
+                        </p>
+                        <p>Food <span><input id="food-field" type="text"></span></p>
+                        <p>Rent <span><input id="rent-field" type="text"></span></p>
+                        <p>Clothes <span><input id="clothes-field" type="text"></span></p>
+                        <button class='all-button' id="calculate">Calculate</button>
+                        <p><strong>Total expenses:</strong> <span id="total-expenses"></span></p>
+                        <p><strong>balance</strong> <span id="balance"></span></p>
+
+
+                    </div>
+
+                    <div>
+                        <p>Save <input id='save-field' type="text"> % <button id="save-button">save</button>
+                        </p>
+                        <p><strong>Saving amount:</strong> <span id="saving-amount"></span></p>
+                        <p><strong>Remaining balance:</strong> <span id="remaining-balance"></span></p>
+                    </div>
+                    <div>
+                        <p id="error">Error in input field </p>
+                        <p id="expense">Your expense is more than your income</p>
+                        <p id="saving">Your saving is less</p>
+                    </div>
+
 
 
                 </div>
-                <div>
-                    <p>
-                        <strong>Expenses</strong>
-                    </p>
-                    <p>Food <span><input id="food-field" type="text"></span></p>
-                    <p>Rent <span><input id="rent-field" type="text"></span></p>
-                    <p>Clothes <span><input id="clothes-field" type="text"></span></p>
-                    <button class='all-button' id="calculate">Calculate</button>
-                    <p><strong>total expenses:</strong> <span id="total-expenses"></span></p>
-                    <p><strong>balance</strong> <span id="balance"></span></p>
+            </section>
 
+        </main>
+        <!-- main section starts -->
 
-                </div>
-
-                <div>
-                    <p>save <input id='save-field' type="text"> % <button id="save-button">save</button>
-                    </p>
-                    <p><strong>saving amount:</strong> <span id="saving-amount"></span></p>
-                    <p><strong>remaining balance:</strong> <span id="remaining-balance"></span></p>
-                </div>
-                <div>
-                    <p id="error">error in judgement </p>
-                </div>
-
-
-
-            </div>
-        </section>
-
-    </main>
-
-    <script src="new.js"></script>
+        <script src="new.js"></script>
 </body>
 
 </html>
