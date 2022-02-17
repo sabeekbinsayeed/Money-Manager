@@ -1,3 +1,5 @@
+// functions
+
 function fieldClear() {
     document.getElementById('income-field').value = ''
     document.getElementById('food-field').value = ''
@@ -26,6 +28,8 @@ function getValue(inputField) {
 
 }
 
+// total expense function
+
 function getExpense(food, rent, clothes) {
     foodValue = parseFloat(food);
     rentValue = parseFloat(rent);
@@ -36,7 +40,7 @@ function getExpense(food, rent, clothes) {
     return total;
 }
 
-
+// calculate button click
 document.getElementById('calculate').addEventListener('click', function () {
     document.getElementById('saving').style.display = 'none'
     document.getElementById('expense').style.display = 'none'
@@ -78,6 +82,8 @@ document.getElementById('calculate').addEventListener('click', function () {
 
 })
 
+
+// save button click
 document.getElementById('save-button').addEventListener('click', function () {
     const incomeValue = getValue('income-field');
 
