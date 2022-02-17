@@ -2,7 +2,9 @@
 h1{
     text-align:center
 }
-
+p{
+    font-size:20px;
+}
  .main-section{
    
 
@@ -15,7 +17,19 @@ h1{
    margin: 0px auto;
     
 }
-
+button{
+    color:white;
+    background-color: rgb(132, 132, 216);
+    padding:3px;
+}
+.center{
+    margin-left: 30px;
+    text-align: center;
+}
+#error {
+    display: none;
+    color:red
+}
 
 
 
